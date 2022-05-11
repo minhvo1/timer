@@ -4,5 +4,6 @@ for (let time of args) {
   let delay = time * 1000;
   setTimeout(() => {
     console.log(time)
+    process.stdout.write('\x07');
   },delay)
 };
